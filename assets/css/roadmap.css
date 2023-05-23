@@ -1,0 +1,88 @@
+  #roadmap h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "Shojumaru";
+    font-weight: 700;
+    font-size: 4vw;
+  }
+  #roadmap h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2.2rem;
+  }
+  
+  #roadmap .content_top {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  #roadmap .content_top .text {
+    border-radius: 0 1.65vw 0 1.65vw;
+    border: 1.5px solid black;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 98px 0px white;
+  }
+  
+  #roadmap .nav_text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  #roadmap .content_bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  
+  #roadmap .content_bottom .item {
+    border-radius: 0 1.65vw 0 1.65vw;
+    border: 1.5px solid black;
+    padding: 10px;
+    min-height: 28vw;
+    box-shadow: 0px 0px 98px 0px white;
+    width: 30%;
+  }
+  
+  .img_bottom {
+    display: none;
+  }
+  
+  @media (max-width: 767px) {
+    #roadmap .content_bottom .item {
+      border-radius: 0 5.65vw 0 5.65vw;
+      border: 1.5px solid black;
+      padding: 10px;
+      margin: 5vw auto;
+      width: 100%;
+    }
+    #roadmap h1 {
+        text-align: center;
+        margin: 1.5rem auto;
+        font-family: "Shojumaru";
+        font-weight: 700;
+        font-size: 4.4rem;
+    }
+  
+    #roadmap .content_top .text {
+      border-radius: 0 5.65vw 0 5.65vw;
+      border: 1.5px solid black;
+      padding: 10px;
+      margin: 5vw auto;
+    }
+  
+    #roadmap .img_left {
+      display: none;
+    }
+  
+    .img_bottom {
+      display: block;
+    }
+  }

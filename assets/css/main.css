@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Unbutu";
+    src: url("../font/Righteous/Righteous-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Shojumaru";
+    src: url("../font/Shojumaru/Shojumaru-Regular.ttf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Unbutu";
+    color: black;
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+  :root{
+    --skinsimp:  #ffd920;
+    --white: #fff;
+    --black:#000;
+    
+  }
+html {
+    font-size: 62.5%;
+
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+main {
+  background-color: var(--skinsimp);
+  width:100%;
+  height: auto;
+  overflow: hidden;
+}
+.active {
+  right: 0;
+  z-index: 100;
+  transition: 0.5s ease;
+}
+
+/* LOADING */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgb(249, 218, 80);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  
+  /* Ẩn loading sau khi trang web được render */
+  /* Fade in */
+.loaded #loading-overlay {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .transition-fade {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  
+  .loaded .transition-fade {
+    opacity: 1;
+  }
+  

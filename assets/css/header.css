@@ -1,0 +1,132 @@
+header {
+  box-shadow: 0px 0px 15px black;
+  background-color: black;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    width: 10rem;
+}
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo h2 {
+    margin: auto 0;
+    font-size: 3.5rem;
+}
+
+nav {
+    margin: auto 0 ;
+
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu-mobile{
+  display: none;
+}
+.nav-item {
+    color: var(--white);
+    font-size: 2rem;
+    margin-right: 2rem;
+    padding: 0 1rem;
+
+
+}
+.nav-item:hover {
+    color: var(--skinsimp);
+    cursor: pointer;
+    transition: .2s;
+}
+.hamburger {
+    display: none;
+}
+.bar,
+.fa-times {
+  width: 1.5rem;
+  height: .3rem;
+  display: block;
+  color: var(--white);
+  padding: 0;
+  margin: .6rem;
+  transition: 0.5s;
+  background-color: var(--white);
+}
+
+.bar:nth-child(1) {
+  width: 100%;
+}
+
+.bar:nth-child(2) {
+  width: 200%;
+}
+
+.bar:nth-child(3) {
+  width: 300%;
+}
+/* Responsive */
+@media screen and (max-width:768px) {
+
+    .logo h2 {
+        margin: auto 0;
+        font-size: 2.5rem;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav-menu-mobile{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-color: var(--skinsimp);
+      width: 100%;
+      text-align: center;
+    }
+    .nav-item {
+        margin: 5rem 0;
+        font-size: 4rem;
+        color:var(--white);
+    }
+    .nav-item:hover {
+        color:var(--black)
+    }
+
+    .hamburger {
+        display: block;
+        color:var(--white);
+        margin: auto 0;
+    }
+    .active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(-315deg);
+        width: 300%;
+      }
+    
+      .active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+        width: 300%;
+      }
+      .active {
+        right: 0;
+        z-index: 100;
+        transition: 0.5s ease;
+      }
+}
+@media screen and (max-width:480px) {
+    .hamburger {
+        display: block;
+        color:var(--white);
+        margin: auto 2rem;
+        padding: 2rem;
+    }
+
+}

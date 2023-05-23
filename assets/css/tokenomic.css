@@ -1,0 +1,72 @@
+#tokenomic {
+  flex-wrap: wrap;
+}
+
+#tokenomic .container .content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#tokenomic h1 {
+  text-align: center;
+  margin: 1.5rem auto;
+  font-family: "Shojumaru";
+  font-weight: 700;
+  font-size: 5.5rem;
+
+}
+
+#tokenomic h2 {
+  text-align: center;
+  font-family: "Shojumaru";
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+#tokenomic .text {
+  border-radius: 0 1.65vw 0 1.65vw;
+  border: 1.5px solid black;
+  padding: 10px;
+  box-shadow: 0px 0px 98px 0px white;
+  margin-top: 30px;
+  
+}
+
+#tokenomic .text h4 {
+  margin: 15px 0px;
+  font-size: 2.2rem;
+}
+
+#tokenomic .right {
+  text-align: center;
+  
+
+}
+
+@media (max-width: 767px) {
+  #tokenomic h1 {
+    text-align: center;
+    margin: 1.5rem auto;
+    font-family: "Shojumaru";
+    font-weight: 700;
+    font-size: 4rem;
+}
+#tokenomic h2 {
+  text-align: center;
+  font-family: "Shojumaru";
+  font-weight: 700;
+  font-size: 3rem;
+}
+#tokenomic .text h4 {
+  margin: 1.5rem ;
+  font-size: 2rem;
+}
+#tokenomic .text {
+  border-radius: 0 2.2rem 0 2.2rem;
+  border: 1.5px solid black;
+  padding: 10px;
+  box-shadow: 0px 0px 98px 0px white;
+  margin-top: 30px;
+}
+}

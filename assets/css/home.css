@@ -1,0 +1,96 @@
+#home {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  #home .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+
+
+    
+  }
+  #home .left {
+    margin-top: 3.5rem ;
+    
+  }
+  #home h1 {
+    font-family: "Shojumaru";
+    font-weight: 700;
+    font-size: 4vw;
+  }
+  #home h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  #home .list_link a {
+    text-decoration: none;
+  }
+  .list_link .icon img {
+    width: 7.5rem;
+    margin: 2rem;
+  }
+  .list_link .exchange img {
+    vertical-align: middle;
+    width: 15rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 7rem;
+    background-color: #fcb900;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .list_link .exchange img:hover {
+    /* background-color: #CCCCCC; */
+    scale: 1.1;
+
+    transition: .5s ease;
+   
+  }
+
+  .list_link .icon img:hover {
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+  }
+  #home .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    opacity: 0.25;
+  }
+
+  @media screen and (max-width:767px) {
+   #home .right {
+        display: none;
+    }    
+    #home .left {
+      padding-top: 5rem ;
+      
+    }
+   #home .container {
+        text-align: center;
+       
+    }
+    #home .container h4 {
+    margin: 5rem 0;
+  }
+    #home h1 {
+    font-size: 4rem;
+  }
+  .list_link {
+  
+  }
+  }
+  
+  

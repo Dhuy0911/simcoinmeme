@@ -1,0 +1,73 @@
+#about {
+    background: var(--skinsimp);
+    height: 100%;
+    width: 100%;
+    padding: 2rem 0;
+}
+#about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+   
+}
+
+#about .banner
+{
+width: 35rem;
+}
+
+
+#about .banner img
+{
+  width: 110%;
+
+}
+#about .content {
+    padding-left: 3rem;
+    margin-left: 4rem;
+}
+
+#about h1 {
+    font-family: "Shojumaru";
+    font-weight: 700;
+    font-size: 4vw;}
+#about h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  @media screen and (max-width:767px) {
+    #about
+    {
+        text-align: center;
+    }
+
+    #about h1 
+    {
+        font-size: 12vw;
+    }
+
+    #about .about_mobile 
+    {
+        display: block;
+    }
+
+    #about .row 
+    {
+        flex-direction: column-reverse;
+        scale: 0.9;
+    }
+    #about .banner img
+{
+margin-left: 4rem;
+
+}
+    #about .content
+    {
+        margin-left: 0;
+    }
+
+  }

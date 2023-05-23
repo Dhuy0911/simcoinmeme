@@ -1,0 +1,68 @@
+
+.contact {
+    margin: 5rem auto;
+  }
+  
+#contact .link .item img {
+    width: 3.5vw;
+  }
+  
+#contact h1 {
+    text-align: center;
+    font-family: "Shojumaru";
+    font-weight: 700;
+    font-size: 4vw;
+  }
+  
+#contact .logo {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #contact .logo img {
+    width: 20rem;
+  }
+  
+#contact .link {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+#contact .link .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact .link .item:hover {
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+  }
+  
+#contact h4 {
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+#contact .text {
+    margin: auto;
+  }
+  
+  @media (max-width: 767px) {
+  #contact .link .item img {
+      width: 14.5vw;
+      text-align: center;
+      display: block;
+      margin: auto;
+    }
+    #contact h1 {
+        text-align: center;
+        font-family: "Shojumaru";
+        font-weight: 500;
+        font-size: 4.4rem;
+        margin-top: 2rem;
+      }
+  }
